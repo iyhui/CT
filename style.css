@@ -1,0 +1,176 @@
+/**Fonts**/
+@font-face {
+  font-family: 'light';
+  src: URL('Font/Barlow-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'med';
+  src: URL('Font/Barlow-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'reg';
+  src: URL('Font/Barlow-Regular.ttf') format('truetype');
+}
+
+body{
+  font-family: 'reg' !important;
+}
+/**this is the sticky style**/
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+
+}
+
+.header {
+
+    background: url('IMG/header3.jpg') no-repeat 50% 0;
+    /* background-repeat: repeat-y;
+    background-repeat: repeat-x; */
+    background-size: 1450px;
+    background-position: 0% 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    font-family: 'reg' !important;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    min-height: 300px;
+}
+
+#navbar1 {
+    overflow: hidden;
+    /*bar color*/
+    background-color: #F7C7B6;
+}
+
+#navbar1 a {
+    float: left;
+    display: block;
+    color:  #776258;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.active:link {
+    font-family: 'reg' !important;
+  }
+
+#navbar1 a:hover {
+  color: white;
+  }
+
+.topnav-right {
+    float: right;
+  }
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+/**grid style**/
+
+.grid-box {
+    margin: auto;
+    width: 80%; /*Gray Box*/
+    border: 1.5px solid;
+    padding: 50px; /*from text to box spacing*/
+    border-radius: 15px;
+  }
+  
+  .bg-grid {
+    /*align-content: center;*/
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgb(255, 255, 255); 
+    border: 1.5px solid #ffffff;
+    border-radius: 15px;
+    /*width: 50%;*/
+    /*vertical-align: middle;*/
+  }
+  
+  /**image grid**/
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+  @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+  }
+    
+    @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    }
+  }
+  
+  /*grid*/
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 0px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
