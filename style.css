@@ -39,6 +39,7 @@ h2 {
   font-size: 70px !important;
   color: #9d846e !important;
 
+
   /* text-align: center; */
 }
 
@@ -75,6 +76,7 @@ h2 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
+    transition-duration: 0.4s;
 }
 
 .active:link {
@@ -91,6 +93,30 @@ h2 {
 
 .content {
     padding: 16px;
+}
+
+.bookButton {
+  background-color: white; /* Green */
+  border: 1.5px solid #F7C7B6;
+  border-radius: 25px;
+  min-width: 200px;
+  color: #F7C7B6;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bookButton:hover {
+  background-color:#F7C7B6;
+  color: white;
 }
 
 .sticky {
@@ -239,3 +265,15 @@ footer {
   min-height: 200px;
 }
 
+.appointment {
+  text-align: center;
+  color: #F7C7B6;
+  font-size: 40px;
+  margin: 30px;
+}
+
+.tab-content{
+  max-height: 400px;
+  overflow: auto;
+
+}
