@@ -44,7 +44,10 @@ h2 {
   /* text-align: center; */
 }
 
-
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .header {
 
@@ -93,7 +96,7 @@ h2 {
   }
 
 .content {
-    padding: 16px;
+    /* padding: 16px; */
 }
 
 .bookButton {
@@ -136,7 +139,7 @@ h2 {
     margin: auto;
     width: 80%; /*Gray Box*/
     border: 1.5px solid;
-    padding: 50px; /*from text to box spacing*/
+    padding: 50px 0; /*from text to box spacing */
     border-radius: 15px;
   }
   
@@ -188,20 +191,22 @@ h2 {
   .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    /* padding: 0 4px; */
   }
   
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 50%;
+    /* flex: 50%; */
     max-width: 50%;
-    padding-right: 30px;
+    min-width: 375px;
+    /* padding-right: 30px; */
   }
 
   .column1 {
-    flex: 50%;
+    /* flex: 50%; */
     max-width: 50%;
-    padding-left: 30px;
+    min-width: 375px;
+    /* padding-left: 30px; */
   }
   
   .column img {
