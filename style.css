@@ -177,21 +177,7 @@ h2 {
     flex-wrap: wrap;
     /* padding: 0 4px; */
   }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    /* flex: 50%; */
-    max-width: 50%;
-    min-width: 375px;
-    /* padding-right: 30px; */
-  }
 
-  .column1 {
-    /* flex: 50%; */
-    max-width: 50%;
-    min-width: 375px;
-    /* padding-left: 30px; */
-  }
   
   .column img {
     margin-top: 8px;
@@ -272,5 +258,12 @@ footer {
   padding-left: 1.1rem;
   padding-right: 1.1rem;
   }
+
+img{
+  margin: 0 !important; 
+}
+.grid-box{
+  margin: 0;
+}
 
 }
