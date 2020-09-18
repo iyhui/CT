@@ -24,29 +24,25 @@ body{
 }
 /**this is the sticky style**/
 
-img {
-  max-width: 80%;
-  /* max-height: 300px; */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
+.price-image {
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+}
 
+.col-lg-6{
+  margin-top: 5%;
 }
 
 h2 {
-  border-bottom: 2px dashed rgb(164, 162, 162, 0.3);
   font-family: 'boilgo' !important;
   font-size: 70px !important;
   color: #9d846e !important;
-
-
-  /* text-align: center; */
+  text-align: center;
 }
 
-.flex{
-  display: flex;
-  flex-wrap: wrap;
+.title-style{
+  padding-top: 5%;
 }
 
 .header {
@@ -95,11 +91,8 @@ h2 {
     float: right;
   }
 
-.content {
-    /* padding: 16px; */
-}
-
 .bookButton {
+  margin: 5%;
   background-color: white; /* Green */
   border: 1.5px solid #F7C7B6;
   border-radius: 25px;
@@ -133,24 +126,12 @@ h2 {
     padding-top: 60px;
 }
 
-/**grid style**/
 
 .grid-box {
     margin: auto;
     width: 80%; /*Gray Box*/
-    border: 1.5px solid;
     padding: 50px 0; /*from text to box spacing */
-    border-radius: 15px;
-  }
-  
-  .bg-grid {
-    /*align-content: center;*/
-    /* background-color: rgb(255, 255, 255); /* Fallback color */
-    /* background-color: rgb(255, 255, 255);  */
-    border: 1.5px solid #ffffff;
-    /* border-radius: 15px; */ */
-    /*width: 50%;*/
-    /* vertical-align: middle; */
+    /* border: 1.5px solid #ffffff; */
   }
   
   /**image grid**/
@@ -213,9 +194,6 @@ h2 {
     color: white;
   }
 
-.container{
-  max-width: 95%;
-}
 
 
 footer {
@@ -240,6 +218,11 @@ footer {
 }
 
 /* mobile responsiveness */
+@media(max-width: 769px){
+  .price-image{
+    margin-left: 12%;
+  }
+}
 
 @media (max-width: 450px) {
   .gallery {
@@ -259,11 +242,27 @@ footer {
   padding-right: 1.1rem;
   }
 
-img{
-  margin: 0 !important; 
-}
-.grid-box{
-  margin: 0;
 }
 
+.far{
+  margin-right: 5px;
 }
+
+.carousel{
+  max-width: 80%;
+  margin: 3% auto 5%;
+
+  background-color: #f7c7b679;
+  border-radius: 10px;
+}
+
+.contact-style{
+  color:#fff !important;
+  padding-top: 3%;
+
+}
+
+.carousel-item{
+  padding: 7% 15%;
+}
+
