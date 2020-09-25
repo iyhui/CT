@@ -21,6 +21,7 @@
 
 body{
   font-family: 'reg' !important;
+ 
 }
 /**this is the sticky style**/
 
@@ -28,11 +29,13 @@ body{
   max-width: 75%;
   text-align: center;
   margin: auto;
+  overflow: hidden;
 }
 
 .col-lg-6{
   margin-top: 5%;
 }
+
 
 h2 {
   font-family: 'boilgo' !important;
@@ -43,6 +46,7 @@ h2 {
 
 .title-style{
   padding-top: 5%;
+  overflow: hidden;
 }
 
 .header {
@@ -59,11 +63,13 @@ h2 {
     text-align: center;
     color: rgb(255, 255, 255);
     min-height: 300px;
+    overflow: hidden;
 
 }
 
 /* nav styles */
   .navbar{
+    overflow: hidden;
     background-color: #F7C7B6;
     color: #9d846e !important;
   }
@@ -104,11 +110,6 @@ h2 {
   color: white;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
 .sticky+.content {
     padding-top: 60px;
@@ -210,6 +211,9 @@ footer {
   .price-image{
     margin-left: 12%;
   }
+  .grid-box{
+    padding: 0;
+  }
   .header{
     background-position: 0% 90%;
     min-height: 220;
@@ -248,6 +252,15 @@ footer {
     padding: 0;
     background-position: 0% 0%;
     min-height: 130;
+    
+  }
+  .price-image{
+    margin-bottom: 5%;
+  }
+
+  .grid-box{
+    padding-top: 0;
+    padding-bottom: 20px;
   }
 
 }
