@@ -1,4 +1,5 @@
-/**Fonts**/
+/***** Fonts *****/
+
 @font-face {
   font-family: 'light';
   src: URL('Font/Barlow-Light.ttf') format('truetype');
@@ -24,23 +25,96 @@ body{
 
  
 }
-/**this is the sticky style**/
-*{
-  box-sizing: border-box;
+
+/* Top header image */
+
+.header {
+
+  background: url('IMG/header3.jpg') no-repeat 50% 0;
+  background-size: 100%;
+  background-position: 0% 90%;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  font-family: 'reg' !important;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  min-height: 300px;
+  overflow: hidden;
+
 }
+
+/* navigation */
+
+.navbar{
+  overflow: hidden;
+  background-color: #F7C7B6;
+  color: #9d846e !important;
+}
+.navbar-brand{
+  color: #9d846e !important;
+}
+.nav-link{
+  color: #9d846e !important;
+}
+
+.topnav-right {
+  float: right;
+}
+
+/***** SECTION 1, SERVICES *****/
 
 .price-image {
   max-width: 75%;
   text-align: center;
   margin: auto;
-
 }
 
-.col-lg-6{
-  margin-top: 5%;
-}
+/* Service Grid Box */
 
+.grid-box {
+    margin: auto;
+    width: 80%; /*Gray Box*/
+    padding: 50px 0; /*from text to box spacing */
 
+  }
+
+  /* Services Pricing */
+
+  table {
+    width:100%;
+  }
+
+  table, th, td {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 15px !important; 
+    text-align: left;
+  }
+
+  table#t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+  }
+
+  table#t01 th {
+    background-color: black;
+    color: white;
+  }
+
+  .tab-content{
+    max-height: 400px;
+    overflow: auto; /**constrains text**/
+  
+  }
+
+/* General Heading Styling */
 h2 {
   font-family: 'boilgo' !important;
   font-size: 70px !important;
@@ -52,40 +126,9 @@ h2 {
   padding-top: 5%;
 }
 
-.header {
+/***** SECTION 2, APPOINTMENTS *****/
 
-    background: url('IMG/header3.jpg') no-repeat 50% 0;
-    background-size: 100%;
-    background-position: 0% 90%;
-    background-color: rgb(255, 255, 255);
-    padding: 30px;
-    font-family: 'reg' !important;
-    font-size: 50px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    min-height: 300px;
-    overflow: hidden;
-
-}
-
-/* nav styles */
-  .navbar{
-    overflow: hidden;
-    background-color: #F7C7B6;
-    color: #9d846e !important;
-  }
-  .navbar-brand{
-    color: #9d846e !important;
-  }
-  .nav-link{
-    color: #9d846e !important;
-  }
-
-
-.topnav-right {
-    float: right;
-  }
-
+/* Appointment Booking Button */
 .bookButton {
   margin: 5%;
   background-color: white; /* Green */
@@ -116,86 +159,9 @@ h2 {
   text-align: center;
 }
 
-.sticky+.content {
-    padding-top: 60px;
-}
-
-
-.grid-box {
-    margin: auto;
-    width: 80%; /*Gray Box*/
-    padding: 50px 0; /*from text to box spacing */
-
-  }
-  
-  /**image grid**/
-.gallery {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    column-width: 33%; }
-    .gallery .pics {
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease; }
-    .gallery .animation {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
-    
-  
-  
-  /*grid*/
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    /* padding: 0 4px; */
-  }
-
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-  
-  table {
-    width:100%;
-  }
-
-  table, th, td {
-    /* border: 1px solid black; */
-    border-collapse: collapse;
-  }
-
-  th, td {
-    padding: 15px !important; 
-    text-align: left;
-  }
-
-  table#t01 tr:nth-child(even) {
-    background-color: #eee;
-  }
-
-  table#t01 tr:nth-child(odd) {
-   background-color: #fff;
-  }
-
-  table#t01 th {
-    background-color: black;
-    color: white;
-  }
-
-
-
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: rgb(228, 177, 159);
-  color: white;
-  min-height: 200px;
+/* Font awesome icon styling */
+.far{
+  margin-right: 5px;
 }
 
 .appointment {
@@ -204,10 +170,36 @@ footer {
   font-size: 40px;
   margin: 30px;
 }
+  
+/***** SECTION 3, GALLERY *****/
+.carousel{
+  max-width: 80%;
+  margin: 3% auto 5%;
 
-.tab-content{
-  max-height: 400px;
-  overflow: auto; /**constrains text**/
+  background-color: #f7c7b679;
+  border-radius: 10px;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+}
+
+.car-image{
+  max-width: 200px;
+}
+
+/***** SECTION 4, FOOTER *****/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(228, 177, 159);
+  color: white;
+  min-height: 200px;
+}
+
+.contact-style{
+  color:#fff !important;
+  padding-top: 3%;
 
 }
 
@@ -225,7 +217,6 @@ footer {
 
   }
 }
-/* 768 */
 
 @media(max-width:530px) {
   .header{
@@ -273,30 +264,4 @@ footer {
     padding-bottom: 20px;
   }
 
-}
-
-.far{
-  margin-right: 5px;
-}
-
-.carousel{
-  max-width: 80%;
-  margin: 3% auto 5%;
-
-  background-color: #f7c7b679;
-  border-radius: 10px;
-}
-
-.contact-style{
-  color:#fff !important;
-  padding-top: 3%;
-
-}
-
-.carousel-item{
-  padding: 7% 15%;
-}
-
-.car-image{
-  max-width: 200px;
 }
