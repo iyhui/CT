@@ -207,6 +207,7 @@ footer {
 @media(max-width: 769px){
   .price-image{
     margin-left: 12%;
+    margin-bottom: 5%;
   }
   .grid-box{
     padding: 0;
@@ -222,10 +223,17 @@ footer {
   .header{
     min-height: 140;
   }
+  .price-image{
+    margin-bottom: 5%;
+  }
 }
 
 
 @media (max-width: 450px) {
+  .price-image{
+    margin-bottom: 5%;
+  }
+
   .gallery {
   -webkit-column-count: 1;
   -moz-column-count: 1;
