@@ -297,3 +297,6 @@ footer {
   padding: 7% 15%;
 }
 
+.car-image{
+  max-width: 200px;
+}
