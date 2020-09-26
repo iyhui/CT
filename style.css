@@ -176,7 +176,7 @@ h2 {
   margin: 3% auto 5%;
 
   background-color: #f7c7b679;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .carousel-item{
@@ -185,6 +185,10 @@ h2 {
 
 .car-image{
   max-width: 200px;
+}
+
+.carousel-inner{
+  border: 1px solid #f7c7b679;
 }
 
 /***** SECTION 4, FOOTER *****/
