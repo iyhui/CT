@@ -21,15 +21,19 @@
 
 body{
   font-family: 'reg' !important;
+
  
 }
 /**this is the sticky style**/
+*{
+  box-sizing: border-box;
+}
 
 .price-image {
   max-width: 75%;
   text-align: center;
   margin: auto;
-  overflow: hidden;
+
 }
 
 .col-lg-6{
@@ -46,14 +50,11 @@ h2 {
 
 .title-style{
   padding-top: 5%;
-  overflow: hidden;
 }
 
 .header {
 
     background: url('IMG/header3.jpg') no-repeat 50% 0;
-    /* background-repeat: repeat-y;
-    background-repeat: repeat-x; */
     background-size: 100%;
     background-position: 0% 90%;
     background-color: rgb(255, 255, 255);
@@ -110,6 +111,10 @@ h2 {
   color: white;
 }
 
+.buttonStyle{
+  margin: auto;
+  text-align: center;
+}
 
 .sticky+.content {
     padding-top: 60px;
@@ -120,7 +125,7 @@ h2 {
     margin: auto;
     width: 80%; /*Gray Box*/
     padding: 50px 0; /*from text to box spacing */
-    /* border: 1.5px solid #ffffff; */
+
   }
   
   /**image grid**/
@@ -222,6 +227,11 @@ footer {
 }
 /* 768 */
 
+@media(max-width:530px) {
+  .header{
+    min-height: 140;
+  }
+}
 
 
 @media (max-width: 450px) {
@@ -240,7 +250,7 @@ footer {
 
   }
 }
-  
+
 @media (max-width: 400px) {
   
   .btn.filter {
