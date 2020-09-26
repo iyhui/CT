@@ -130,7 +130,8 @@ h2 {
 
 /* Appointment Booking Button */
 .bookButton {
-  margin: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   background-color: white; /* Green */
   border: 1.5px solid #F7C7B6;
   border-radius: 25px;
@@ -145,8 +146,6 @@ h2 {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .bookButton:hover {
