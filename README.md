@@ -7,4 +7,5 @@ Website for a small, family business.
 ### Installation
 
 🌸 Clone this repository or download all the files
+
 🌸 Open index.html file
